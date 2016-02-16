@@ -4,5 +4,9 @@
 	"phones": {
 		"mobile": "+380931562203",
 		"home": "2304040"
+	},
+	"status": {
+		"url": "https://learn.javascript.ru/ajax-xmlhttprequest",
+		"task": "зробити завдання"
 	}
 }
