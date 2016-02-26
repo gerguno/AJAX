@@ -16,7 +16,17 @@
           <input type="submit" value="Загрузить">
         </form>
 
+        <button id="button" onclick="callJSONP()">Call JSONP</button> 
+          
+        <button onclick="start()">Старт</button>
+        <button onclick="stop()">Стоп</button>
+
+        Нажмите "Старт" для начала.
+        <div id="logElem"></div>
+
+        <script src="client-ssevents.js"></script>
         <script src="client-get.js"></script>
+        <script src="client-jsonp.js"></script>
         <script src="client-get-crossdomain.js"></script>
         <script src="client-upload.js"></script>
         <script src="stuff.js"></script>

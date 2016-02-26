@@ -45,6 +45,19 @@ if (!module.parent) {
   exports.accept = accept;
 }
 
+
+
+
+
+
+// ------ запустить сервер -------
+
+if (!module.parent) {
+  http.createServer(accept).listen(8080);
+} else {
+  exports.accept = accept;
+}
+
 console.log('Server is running on port 8080');
 
 
