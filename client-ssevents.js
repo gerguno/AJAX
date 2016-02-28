@@ -34,10 +34,11 @@ var eventSource;
     }
 
     function stop() { // при нажатии на Стоп
-    eventSource.close();
-    log("Соединение завершено");
+      eventSource.close();
+      log("Соединение завершено");
     }
 
     function log(msg) {
-    logElem.innerHTML += msg + "<br>";
+      logElem.innerHTML += msg + "<br>";
     }
+    

@@ -1,5 +1,7 @@
 var http = require('http');
 var url = require('url');
+var es6 = require('es6-promise').polyfill();
+var iso = require('isomorphic-fetch');
 var querystring = require('querystring');
 var static = require('node-static');
 var file = new static.Server('.', {
@@ -35,19 +37,6 @@ function accept(req, res) {
   }
 
 }
-
-
-// ------ запустить сервер -------
-
-if (!module.parent) {
-  http.createServer(accept).listen(8080);
-} else {
-  exports.accept = accept;
-}
-
-
-
-
 
 
 // ------ запустить сервер -------
